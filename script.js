@@ -11,9 +11,9 @@ hoverLeft.addEventListener('mouseover', () => {
     background.style.transform = 'translateX(20%) scale(1.5)';
 })
 
-hoverLeft.addEventListener('mouseoout', () => {
+hoverLeft.addEventListener('mouseout', () => {
     charContainer.style.transform = 'translateX(0%)';
-    charTwo.style.right = '-0%'
+    charTwo.style.right = '0%'
     background.style.transform = 'translateX(0%) scale(1.5)';
 })
 
