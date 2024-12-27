@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    overflow: hidden;
+}
+
+.background{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: maroon;
+}
+
+.background img{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transform-origin: center;
+    transform: translateX(0%) scale(1.5);
+    transition: all 1s ease;
+}
+
+.background .hover-left{
+    z-index: 3;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: -200px;
+    width: 50%;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.background .hover-right{
+    z-index: 3;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    right: -200px;
+    width: 50%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.background .chars{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    width: 98vw;
+    height: 100vh;
+    /* background: maroon; */
+}
+
+.background .chars .chars-imgs{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    transform: translateX(0%);
+    transition: transform 1s ease;
+}
+
+.background .chars .chars-imgs .char{
+    position: relative;
+    top: 50%;
+    width: 50px;
+    transform: scale(2);
+    overflow: visible;
+}
+
+.char-1{
+    position: relative;
+    left: 0;
+    transition: left 1s ease;
+}
+
+.char-2{
+    position: relative;
+    right: 0;
+    transition: right 1s ease;
+}
