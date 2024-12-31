@@ -45,7 +45,7 @@ const dialogMessages = {
     "Apa kabar hari ini?",
     "Ingin mendengar lelucon?",
     "Aku baru saja mengalami petualangan seru!",
-    "Semangat pagi!",
+    "Selamat pagi, Sensei!",
   ],
 };
 
